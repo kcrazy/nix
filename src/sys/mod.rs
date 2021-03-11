@@ -108,3 +108,6 @@ pub mod inotify;
 
 #[cfg(target_os = "linux")]
 pub mod timerfd;
+
+#[cfg(target_os = "linux")]
+pub mod fanotify;
