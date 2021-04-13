@@ -170,4 +170,8 @@ impl Fanotify {
         // Write the full response to the fanotify fd
         Ok(self.fd.write_all(&response_bytes)?)
     }
+
+    pub fn as_raw_fd(&self) -> RawFd {
+        self.fd.as_raw_fd()
+    }
 }
